@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Canvas Basics</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    
+    <!-- creating 9x9 sudoko table -->
+    <label>Life: <span id = 'lifePoint'></span></label>
+
+    <table> 
+        <tr>
+            <td>5</td>
+            <td>3</td>
+            <td><input maxlength="1" id="sixthInput" type="text"></td>
+            <td><input maxlength="1" id="fifthInput" type="text"></td>
+            <td>7</td>
+            <td><input maxlength="1" id = "firstInput" type="text"></td>   <!--connecting the input to js with the name firstInput-->
+            <td><input maxlength="1" id = "thirdInput" type="text"></td>
+            <td><input maxlength="1" id = "forthInput" type="text"></td>
+            <td><input maxlength="1" id = "secondInput" type="text"></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td><input maxlength="1" id = "aInput" type="text"></td>
+            <td><input maxlength="1" id = "bInput" type="text"></td>
+            <td>1</td>
+            <td>9</td>
+            <td>5</td>
+            <td><input maxlength="1" id = "cInput" type="text"></td>
+            <td><input maxlength="1" id = "dInput" type="text"></td>
+            <td><input maxlength="1" id = "eInput" type="text"></td>
+        </tr>
+        <tr>
+            <td><input maxlength="1" id = "fInput" type="text"></td>
+            <td>9</td>
+            <td>8</td>
+            <td><input maxlength="1" id = "gInput" type="text"></td>
+            <td><input maxlength="1" id= "hInput" type="text"></td>
+            <td><input maxlength="1" id = "iInput" type="text"></td>
+            <td><input maxlength="1" id = "jInput" type="text"></td>
+            <td>6</td>
+            <td><input maxlength="1" id = "kInput" type="text"></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td><input maxlength="1" id = "lInput" type="text"></td>
+            <td><input maxlength="1" id = "mInput" type="text"></td>
+            <td><input maxlength="1" id = "nInput" type="text"></td>
+            <td>6</td>
+            <td><input maxlength="1" id = "oInput" type="text"></td>
+            <td><input maxlength="1" id = "pInput" type="text"></td>
+            <td><input maxlength="1" id = "qInput" type="text"></td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><input maxlength="1" id = "rInput" type="text"></td>
+            <td><input maxlength="1" id = "sInput" type="text"></td>
+            <td>8</td>
+            <td><input maxlength="1" id = "tInput" type="text"></td>
+            <td>3</td>
+            <td><input maxlength="1" id = "uInput" type="text"></td>
+            <td><input maxlength="1" id = "vInput" type="text"></td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td><input maxlength="1" id = "wInput" type="text"></td>
+            <td><input maxlength="1" id = "xInput" type="text"></td>
+            <td><input maxlength="1" id = "yInput" type="text"></td>
+            <td>2</td>
+            <td><input maxlength="1" id = "zInput" type="text"></td>
+            <td><input maxlength="1" id = "aaInput" type="text"></td>
+            <td><input maxlength="1" id = "abInput" type="text"></td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><input maxlength="1" id = "acInput" type="text"></td>
+            <td>6</td>
+            <td><input maxlength="1" id = "adInput" type="text"></td>
+            <td><input maxlength="1" id = "aeInput" type="text"></td>
+            <td><input maxlength="1" id = "afInput" type="text"></td>
+            <td><input maxlength="1" id = "agInput" type="text"></td>
+            <td>2</td>
+            <td>8</td>
+            <td><input maxlength="1" id = "ahInput" type="text"></td>
+        </tr>
+        <tr>
+            <td><input maxlength="1" id = "aiInput" type="text"></td>
+            <td><input maxlength="1" id = "ajInput" type="text"></td>
+            <td><input maxlength="1" id = "akInput" type="text"></td>
+            <td>4</td>
+            <td>1</td>
+            <td>9</td>
+            <td><input maxlength="1" id = "alInput" type="text"></td>
+            <td><input maxlength="1" id = "amInput" type="text"></td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td><input maxlength="1" id = "anInput" type="text"></td>
+            <td><input maxlength="1" id = "aoInput" type="text"></td>
+            <td><input maxlength="1" id = "apInput" type="text"></td>
+            <td><input maxlength="1" id = "aqInput" type="text"></td>
+            <td>8</td>
+            <td><input maxlength="1" id = "arInput" type="text"></td>
+            <td><input maxlength="1" id ="asInput" type="text"></td>
+            <td>7</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <button onclick="checkSudoku()">Check</button> 
+    aaaaa
+
+    <!-- event click checks the sudoku -->
+
+    <!-- include js file after DOM is loaded; 
+            if included earlier, you have to use window.onload = function(){ ... } 
+            approach in your intro.js file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

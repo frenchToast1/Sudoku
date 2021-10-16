@@ -1,0 +1,8 @@
+body {
+  background-color: red;
+  text-align: center;
+  padding-top: 50vh;
+}
+h1 {
+  transform: translateY(-50%);
+}
