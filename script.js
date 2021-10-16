@@ -70,7 +70,7 @@ function checkSudoku(){
     && inputValue42 == "8" && inputValue43 == "7" && inputValue44 == "6" && inputValue45 == "3" && inputValue46 == "3"
     && inputValue47 == "4" && inputValue48 == "5" && inputValue49 == "2" && inputValue50 == "6" && inputValue51 == "1")
     {
-        alert('win!')
+        alert('win! you rockstar you!')
         life = 3;
         location.replace('start.html') // when game is a win it will reopen start page
     } 
